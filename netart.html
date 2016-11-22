@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="scriptnet.js"></script>
+<script>
+$(document).ready(function(){
+    var factor = 4;
+
+$('#idkwhat').click(function() {
+    $(this).animate({
+        top: +=150px + $(this).height() / factor,
+        left: +=150px+ $(this).width() / factor,
+        width: $(this).width() * factor
+    });
+});
+
+</script>
+</head>
+<body>
+
+
+
+<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+<div id="wrapper">
+<img id="idkwhat" src="http://3.bp.blogspot.com/_wLy5VnVPGS4/TQwqRW-QPhI/AAAAAAAAIQM/huLOLPQZE_o/s1600/unicorn.jpg" />
+
+<style>
+   body {
+    text-align: center;
+}
+
+#wrapper {
+     position: relative;   
+}
+
+#idkwhat {
+    display: block;
+    top: 100px;
+    left: 200px;
+    position: absolute;
+    width: 200px;
+    cursor: pointer;
+} 
+    </style>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
